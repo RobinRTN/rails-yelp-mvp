@@ -1,0 +1,14 @@
+<!-- app/views/restaurants/_form.html.erb -->
+<h1 class= "text-center mt-3">Create a new restaurant</h1>
+
+<div class="container">
+  <div class="row col-6 d-flex justify-content-center mt-3">
+    <%= simple_form_for(@restaurant) do |f| %>
+      <%= f.input :name %>
+      <%= f.input :address %>
+      <%= f.input :phone_number %>
+      <%= f.input :category %>
+      <%= f.submit %>
+    <% end %>
+  </div>
+</div>

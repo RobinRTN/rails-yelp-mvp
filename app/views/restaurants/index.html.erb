@@ -1,0 +1,7 @@
+  <div class="container mt-2 text-center">
+      <% @restaurants.each do |restaurant| %>
+          <p><%= link_to restaurant.name,restaurant_path(restaurant) %></p>
+      <%end%>
+  </div>
+
+

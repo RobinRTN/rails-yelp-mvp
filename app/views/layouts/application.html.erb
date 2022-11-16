@@ -12,8 +12,10 @@
   </head>
 
   <body>
+    <nav class="d-flex justify-content-between m-2">
+      <p><%= link_to "Create a new restaurant", new_restaurant_path %></p>
+      <p><%= link_to "Back to restaurant list", restaurants_path %></p>
+    </nav>
     <%= yield %>
   </body>
 </html>
-
-

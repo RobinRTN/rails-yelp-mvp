@@ -1,0 +1,16 @@
+<div class="container m-2 text-align-center weight-bold">
+  <p>Name: <%=@restaurant.name%></p>
+  <p>Address: <%=@restaurant.address%></p>
+  <p>Phone: <%=@restaurant.phone_number%></p>
+  <p>Category: <%=@restaurant.category%></p>
+  -------------------------
+  <%@restaurant.reviews.each do |review| %>
+    <p>Content: <%=review.content%></p>
+    <p>Review: <%=review.rating%></p>
+  ----------
+  <%end%>
+</div>
+
+<div class="button btn primary-btn">
+  <%=link_to "Add a Review", new_restaurant_review_path(@restaurant)%>
+</div>
